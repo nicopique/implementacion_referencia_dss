@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}AGESIC 2017
+${licensePrefix}Identifiación Electrónica
+<#if licenseLast??>
+${licenseLast}
+</#if>
