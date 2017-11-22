@@ -64,7 +64,7 @@ public class pedidoPDF extends HttpServlet {
         
         RequestBuilderImpl requestBuilder = new RequestBuilderImpl(
             jcaKeyStoreSignatureKeyService, xmlDSigRS,
-            "tallerDSS", "http://tallerDSS.uy:8081/tallerDSS/respuestaDSS");
+            "tallerDSS", "http://tallerDSS.uy:8080/IR_DSS/respuestaDSS");
             requestBuilder.setSignatureMethods(Collections.singletonList("SmartCard"));
         
         String requestData = "";
@@ -76,7 +76,7 @@ public class pedidoPDF extends HttpServlet {
         int randomInt = (int)(random*1000000);
         requestId = ""+random;
         
-        String targetURL = "https://eid.portal.gub.uy/dss/dss/post";
+        String targetURL = "https://test-eid.portal.gub.uy/v1.1/dss/dss/post";
         
         //requestData = requestBuilder.buildCMSSignRequest(requestId, "Texto a firmar para el taller.".getBytes(), true);
         

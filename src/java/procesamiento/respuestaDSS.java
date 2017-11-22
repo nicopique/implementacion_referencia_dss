@@ -80,7 +80,7 @@ public class respuestaDSS extends HttpServlet {
             out.println("<p> Message: "+ result.getResultMessage()+"</p>");
             out.println("<p> MessageLang: "+ result.getResultMessageLang()+"</p>");
             out.println("<p> Minor Result: "+ result.getResultMinor()+"</p>");
-            out.println("<a href=\"/\">Volver a Realizar pedido DSS</a>");
+            out.println("<a href=\"/IR_DSS/\">Volver a Realizar pedido DSS</a>");
             out.println("</body>");
             out.println("</html>");
             ts.close();

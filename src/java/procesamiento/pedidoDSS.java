@@ -61,7 +61,7 @@ public class pedidoDSS extends HttpServlet {
         
         RequestBuilderImpl requestBuilder = new RequestBuilderImpl(
             jcaKeyStoreSignatureKeyService, xmlDSigRS,
-            "tallerDSS", "http://tallerDSS.uy:8081/tallerDSS/respuestaDSS");
+            "tallerDSS", "http://tallerDSS.uy:8080/IR_DSS/respuestaDSS");
             requestBuilder.setSignatureMethods(Collections.singletonList("SmartCard"));
         
         String requestData = "";
@@ -97,7 +97,7 @@ public class pedidoDSS extends HttpServlet {
         */
         
         /*Datos del POST*/
-        String targetURL = "https://eid.portal.gub.uy/dss/dss/post";
+        String targetURL = "https://test-eid.portal.gub.uy/v1.1/dss/dss/post";
         
         
         try (PrintWriter out = response.getWriter()) {
